@@ -1,21 +1,22 @@
 {
 	"name": "color-stamp",
-	"displayName": "Color Stamp",
+	"displayName": "Color Stamp 2",
 	"description": "Change VS Code window status bar color of each workspace for easy identifying",
-	"version": "0.0.1",
-	"publisher": "s3anmorrow",
+	"version": "2.0.0",
+	"publisher": "leenawat",
 	"engines": {
-		"vscode": "^1.30.0"
+		"vscode": "^1.55.0"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/s3anmorrow/VSCodeExt-ColorStamp"
+		"url": "https://github.com/leenawat/VSCodeExt-ColorStamp"
 	},
 	"license": "GPL-3.0",
 	"categories": [
 		"Other"
 	],
 	"keywords": [
+		"title",
 		"status",
 		"bar",
 		"id",
@@ -28,79 +29,86 @@
 		"UI",
 		"vscode"
 	],
-	"icon":"images/icon.png",
 	"activationEvents": [
-		"onCommand:extension.colorStamp",
-		"onCommand:extension.colorStamp-Blue",
-		"onCommand:extension.colorStamp-Red",
-		"onCommand:extension.colorStamp-Green",
-		"onCommand:extension.colorStamp-Yellow",
-		"onCommand:extension.colorStamp-Orange",
-		"onCommand:extension.colorStamp-Purple",
-		"onCommand:extension.colorStamp-Silver",
-		"onCommand:extension.colorStamp-Khaki",
-		"onCommand:extension.colorStamp-X"
+		"onCommand:extension.vscode-title-color",
+		"onCommand:extension.vscode-title-color-Blue",
+		"onCommand:extension.vscode-title-color-Red",
+		"onCommand:extension.vscode-title-color-Green",
+		"onCommand:extension.vscode-title-color-Yellow",
+		"onCommand:extension.vscode-title-color-Orange",
+		"onCommand:extension.vscode-title-color-Purple",
+		"onCommand:extension.vscode-title-color-Silver",
+		"onCommand:extension.vscode-title-color-Khaki",
+		"onCommand:extension.vscode-title-color-X"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.colorStamp",
-				"title": "Color Stamp : ?"
+				"command": "extension.vscode-title-color",
+				"title": "Title Color: ?"
 			},
 			{
-				"command": "extension.colorStamp-Blue",
-				"title": "Color Stamp : Blue"
+				"command": "extension.vscode-title-color-Blue",
+				"title": "Title Color: Blue"
 			},
 			{
-				"command": "extension.colorStamp-Red",
-				"title": "Color Stamp : Red"
+				"command": "extension.vscode-title-color-Red",
+				"title": "Title Color: Red"
 			},
 			{
-				"command": "extension.colorStamp-Green",
-				"title": "Color Stamp : Green"
+				"command": "extension.vscode-title-color-Green",
+				"title": "Title Color: Green"
 			},
 			{
-				"command": "extension.colorStamp-Yellow",
-				"title": "Color Stamp : Yellow"
+				"command": "extension.vscode-title-color-Yellow",
+				"title": "Title Color: Yellow"
 			},
 			{
-				"command": "extension.colorStamp-Orange",
-				"title": "Color Stamp : Orange"
+				"command": "extension.vscode-title-color-Orange",
+				"title": "Title Color: Orange"
 			},
 			{
-				"command": "extension.colorStamp-Purple",
-				"title": "Color Stamp : Purple"
+				"command": "extension.vscode-title-color-Purple",
+				"title": "Title Color: Purple"
 			},
 			{
-				"command": "extension.colorStamp-Silver",
-				"title": "Color Stamp : Silver"
+				"command": "extension.vscode-title-color-Silver",
+				"title": "Title Color: Silver"
 			},
 			{
-				"command": "extension.colorStamp-Khaki",
-				"title": "Color Stamp : Khaki"
+				"command": "extension.vscode-title-color-Khaki",
+				"title": "Title Color: Khaki"
 			},
 			{
-				"command": "extension.colorStamp-X",
-				"title": "Color Stamp : X"
+				"command": "extension.vscode-title-color-X",
+				"title": "Title Color: X"
 			}
 		]
 	},
 	"scripts": {
-		"package": "vsce package",
-		"install": "code --install-extension color-stamp-0.0.1.vsix",
+		"package": "vsce package",		
 		"publish": "vsce publish",
 		"vscode:prepublish": "npm run compile",
+		"install": "code --install-extension color-stamp-2.0.0.vsix",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28",
-		"tslint": "^5.12.1",
-		"@types/node": "^8.10.25",
-		"@types/mocha": "^2.2.42"
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.55.0",
+		"@typescript-eslint/eslint-plugin": "^4.14.1",
+		"@typescript-eslint/parser": "^4.14.1",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vsce": "^1.87.1",
+		"vscode-test": "^1.5.0"
 	}
 }

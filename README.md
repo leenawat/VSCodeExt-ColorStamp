@@ -1,5 +1,8 @@
 # Color Stamp
 
+Forked from https://github.com/s3anmorrow/VSCodeExt-ColorStamp
+
+
 This extension is for developers who typically have multiple VS Code windows open with different projects. It enables a quick and easy way to change the status bar color of each window for identification.
 
 ## Features

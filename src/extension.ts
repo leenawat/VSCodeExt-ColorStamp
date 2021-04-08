@@ -27,9 +27,9 @@ async function updateConfig(enteredColor: any) {
 		value = {};
 	} else {
 		value = {
-			//"titleBar.activeBackground": enteredColor,
-			//"titleBar.inactiveBackground": enteredColor,
-			//"titleBar.activeForeground": "#FFFFFF",
+			"titleBar.activeBackground": enteredColor,
+			"titleBar.inactiveBackground": enteredColor,
+			"titleBar.activeForeground": "#FFFFFF",
 			"statusBar.background": enteredColor,
 			"statusBar.debuggingBackground": enteredColor,
 			"statusBar.noFolderBackground": enteredColor,
