@@ -30,59 +30,59 @@
 		"vscode"
 	],
 	"activationEvents": [
-		"onCommand:extension.vscode-title-color",
-		"onCommand:extension.vscode-title-color-Blue",
-		"onCommand:extension.vscode-title-color-Red",
-		"onCommand:extension.vscode-title-color-Green",
-		"onCommand:extension.vscode-title-color-Yellow",
-		"onCommand:extension.vscode-title-color-Orange",
-		"onCommand:extension.vscode-title-color-Purple",
-		"onCommand:extension.vscode-title-color-Silver",
-		"onCommand:extension.vscode-title-color-Khaki",
-		"onCommand:extension.vscode-title-color-X"
+		"onCommand:extension.colorStamp",
+		"onCommand:extension.colorStamp-Blue",
+		"onCommand:extension.colorStamp-Red",
+		"onCommand:extension.colorStamp-Green",
+		"onCommand:extension.colorStamp-Yellow",
+		"onCommand:extension.colorStamp-Orange",
+		"onCommand:extension.colorStamp-Purple",
+		"onCommand:extension.colorStamp-Silver",
+		"onCommand:extension.colorStamp-Khaki",
+		"onCommand:extension.colorStamp-X"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.vscode-title-color",
-				"title": "Title Color: ?"
+				"command": "extension.colorStamp",
+				"title": "Color Stamp : ?"
 			},
 			{
-				"command": "extension.vscode-title-color-Blue",
-				"title": "Title Color: Blue"
+				"command": "extension.colorStamp-Blue",
+				"title": "Color Stamp : Blue"
 			},
 			{
-				"command": "extension.vscode-title-color-Red",
-				"title": "Title Color: Red"
+				"command": "extension.colorStamp-Red",
+				"title": "Color Stamp : Red"
 			},
 			{
-				"command": "extension.vscode-title-color-Green",
-				"title": "Title Color: Green"
+				"command": "extension.colorStamp-Green",
+				"title": "Color Stamp : Green"
 			},
 			{
-				"command": "extension.vscode-title-color-Yellow",
-				"title": "Title Color: Yellow"
+				"command": "extension.colorStamp-Yellow",
+				"title": "Color Stamp : Yellow"
 			},
 			{
-				"command": "extension.vscode-title-color-Orange",
-				"title": "Title Color: Orange"
+				"command": "extension.colorStamp-Orange",
+				"title": "Color Stamp : Orange"
 			},
 			{
-				"command": "extension.vscode-title-color-Purple",
-				"title": "Title Color: Purple"
+				"command": "extension.colorStamp-Purple",
+				"title": "Color Stamp : Purple"
 			},
 			{
-				"command": "extension.vscode-title-color-Silver",
-				"title": "Title Color: Silver"
+				"command": "extension.colorStamp-Silver",
+				"title": "Color Stamp : Silver"
 			},
 			{
-				"command": "extension.vscode-title-color-Khaki",
-				"title": "Title Color: Khaki"
+				"command": "extension.colorStamp-Khaki",
+				"title": "Color Stamp : Khaki"
 			},
 			{
-				"command": "extension.vscode-title-color-X",
-				"title": "Title Color: X"
+				"command": "extension.colorStamp-X",
+				"title": "Color Stamp : X"
 			}
 		]
 	},
